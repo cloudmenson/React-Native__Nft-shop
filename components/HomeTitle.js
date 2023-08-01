@@ -1,10 +1,19 @@
-import { View, Text } from "react-native";
-import React from "react";
+import { View, Text, Image, TextInput } from "react-native";
+
+import { assets, COLORS, SHADOWS, SIZES } from "../constants";
 
 const HomeTitle = () => {
   return (
-    <View>
-      <Text>HomeTitle</Text>
+    <View style={{ backgroundColor: COLORS.primary, padding: SIZES.font }}>
+      <View
+        style={{
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "space-between",
+        }}
+      >
+        <Image  source={assets.logo} />
+      </View>
     </View>
   );
 };
